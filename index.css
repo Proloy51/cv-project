@@ -1,0 +1,190 @@
+
+*{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+nav{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(163, 201, 228);
+    
+}
+
+nav ul{
+    display: flex;
+    gap: 2rem;
+    
+}
+
+header{
+    background-image: url("./img.jpg");
+    height: 65vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    filter: saturate(0);
+
+}
+
+header:hover{
+    filter: saturate(1);
+     transition: transform 2s cubic-bezier(0.25, 0.1, 0.25, 1);
+     transform: scale(1.05);
+}
+
+
+main{
+    background-color:rgb(123, 123, 123);
+    color: aliceblue;
+    padding: 20px;
+    font-size: large;
+}
+
+.section-title{
+    text-align: center;
+}
+
+.row{
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 1rem; */
+}
+
+
+
+.skills{}
+
+
+.card{
+    width: 60%;
+    height: 40%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    
+    color: black;
+    
+    
+}
+.card:hover{
+    box-shadow: 0.5rem 0.5rem 0.2rem rgb(27, 26, 26);
+}
+
+.card-title{}
+
+.card-body{}
+
+.center{
+    display: flex;
+    justify-content: center;   /* space-evenly,flex-start,flex-end*/
+     /* flex-direction: column;  */
+    align-items: center;  /*align at direction of y-axix*/
+}
+.center{
+    color: #ffffff;
+    display: flex;
+    justify-content: center;   /* space-evenly,flex-start,flex-end*/
+    flex-direction: column; 
+
+   
+}
+
+.tutorials{
+    background-color: antiquewhite;
+    height: 80vh;
+    
+    gap: 1rem;
+}
+
+.tutorial{
+    background-color: rgb(187, 228, 23);
+    width: 20%;
+    height: 20vh;
+    
+  
+}
+
+.tutorial h2{
+  
+}
+
+.item3{
+    align-self: flex-start;
+    justify-self: flex-start;
+
+}
+
+
+.tutorials::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.parent{
+    background-color: aqua;
+    height: 20rem;
+    position: relative;
+}
+
+.child{
+    background-color: brown;
+    width: 20rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.team-section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.team-members{
+    display: grid;
+    grid-template-columns: 30% 30% 30% 30%;
+    
+    gap: 1rem;
+}
+
+.team-member{
+    background-color: rgb(247, 120, 16);
+    padding: 1rem;
+    text-align: center;
+}
+
+#team-member2{
+    background-image: url(tom-podmore-ztFjvP3qmbE-unsplash.jpg);
+    
+    background-color: rgb(0, 68, 255);
+    background-size: cover;
+    grid-column: 2/span 3;
+    grid-row: 1/span 2;
+
+}
+
+#team-member2:hover{
+    filter: saturate(0);
+}
+
+
+footer{
+    background-color:rgb(97, 98, 98);
+    color: aliceblue;
+    padding: 20px;
+}
+
+button{
+    padding: 1rem;
+
+}
